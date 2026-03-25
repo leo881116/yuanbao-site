@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <meta name="google-site-verification" content="Rp4TW42D_k7jIipCq8ImqxO_4_pAaHqY-niMtvMISiA" />
-  <title>源堡營造有限公司｜以源為始，築堡為家</title>
-  <meta name="description" content="源堡營造有限公司，提供道路工程、自地自建、室內設計、室內裝修、工程鑑定、施工諮詢與專業技術服務。" />
+
+  <title>源堡營造有限公司｜台中工程鑑定・驗屋・自地自建・結構安全評估</title>
+  <meta name="description" content="源堡營造有限公司，提供台中工程鑑定、驗屋、自地自建、道路工程、施工諮詢與結構安全評估服務。由專業技師團隊協助您快速判斷工程問題與處理方向。" />
+  <meta name="keywords" content="源堡營造有限公司,台中營造公司,工程鑑定,驗屋,自地自建,結構安全評估,道路工程,施工諮詢,鄰損鑑定,房屋裂縫" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="源堡營造有限公司" />
+
+  <meta property="og:title" content="源堡營造有限公司｜台中工程鑑定・驗屋・自地自建・結構安全評估" />
+  <meta property="og:description" content="提供工程鑑定、驗屋、自地自建、道路工程、施工諮詢與結構安全評估服務。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://leo881116.github.io/yuanbao-site/" />
+
   <style>
     :root{
       --bg:#f5f5f3;
@@ -16,11 +27,11 @@
       --accent:#9f1d1d;
       --accent-dark:#7a1111;
       --dark:#111111;
-      --soft:#efebe6;
       --radius:24px;
       --shadow:0 20px 50px rgba(0,0,0,.08);
       --max:1200px;
     }
+
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
@@ -33,6 +44,7 @@
         linear-gradient(180deg,#faf9f7 0%,#f2efea 100%);
       line-height:1.7;
     }
+
     a{text-decoration:none;color:inherit}
     img{max-width:100%;display:block}
     .container{width:min(var(--max),calc(100% - 32px));margin:auto}
@@ -58,8 +70,12 @@
       font-weight:900;
       letter-spacing:.01em;
     }
+    h3{
+      font-size:clamp(22px,3vw,30px);
+      line-height:1.3;
+      font-weight:900;
+    }
     .muted{color:var(--muted)}
-    .grid{display:grid;gap:24px}
     .btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
     .btn{
       display:inline-flex;align-items:center;justify-content:center;
@@ -70,6 +86,7 @@
     .btn-primary{background:var(--accent);color:#fff;box-shadow:0 16px 30px rgba(159,29,29,.18)}
     .btn-primary:hover{background:var(--accent-dark)}
     .btn-secondary{background:rgba(255,255,255,.86);border-color:#cfc9c2}
+
     .hero{
       min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;
       border-bottom:1px solid var(--line);
@@ -100,33 +117,40 @@
       margin-top:16px;padding:16px 18px;border-radius:18px;background:#fff6f6;border:1px solid #f0d3d3;
       color:#5a4b4b;font-size:15px
     }
+
     .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
     .stat{
       background:var(--card);border:1px solid #ece8e2;border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.04)
     }
     .stat .num{font-size:42px;line-height:1;font-weight:900;color:var(--accent)}
     .stat .label{margin-top:8px;color:var(--muted);font-weight:600}
+
     .split{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:stretch}
     .panel-dark{
       background:#141414;color:#fff;border-radius:32px;padding:34px;box-shadow:var(--shadow)
     }
     .panel-dark li{margin:14px 0;color:rgba(255,255,255,.86)}
+
     .cards-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .service-card,.project-card,.process-card,.team-card{
+    .service-card,.project-card,.process-card,.team-card,.seo-card{
       background:var(--card);border:1px solid #ebe6e0;border-radius:24px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,.03)
     }
     .service-no,.process-no{font-size:12px;letter-spacing:.24em;font-weight:900;color:var(--accent)}
     .service-title{margin-top:10px;font-size:28px;line-height:1.35;font-weight:900}
+
     .band{background:#111;color:#fff}
     .band .muted{color:rgba(255,255,255,.72)}
     .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     .project-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:#fff}
+
     .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
     .process-card p{margin-top:10px;color:var(--muted)}
+
     .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
     .team-chip{
       background:#fff;border:1px solid #ece8e2;border-radius:18px;padding:16px;text-align:center;font-weight:800
     }
+
     .contact{
       background:linear-gradient(135deg,#8f1616 0%,#5e0c0c 100%);
       color:#fff;
@@ -139,9 +163,31 @@
     .contact-item{margin-bottom:18px}
     .contact-label{font-size:12px;letter-spacing:.24em;color:rgba(255,255,255,.72);font-weight:800}
     .contact-value{font-size:clamp(28px,3.2vw,44px);line-height:1.2;font-weight:900;margin-top:6px;word-break:break-word}
+    .contact-value a:hover{opacity:.9}
+
+    .cta-note{
+      margin-top:18px;
+      padding:14px 18px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.15);
+      border:1px solid rgba(255,255,255,0.25);
+      font-size:13px;
+      line-height:1.6;
+      letter-spacing:0.5px;
+      backdrop-filter: blur(4px);
+    }
+
+    .mini-cta{
+      margin-top:20px;
+      font-size:15px;
+      font-weight:700;
+      color:rgba(255,255,255,.92);
+    }
+
     .footer{
       padding:22px 0;background:#0d0d0d;color:rgba(255,255,255,.7);font-size:14px
     }
+
     .nav{
       position:fixed;left:0;right:0;top:0;z-index:50;transition:.25s ease;
       background:rgba(250,249,247,.55);backdrop-filter:blur(10px);border-bottom:1px solid transparent;
@@ -151,6 +197,40 @@
     .brand{font-weight:900;font-size:20px;letter-spacing:.08em}
     .nav-links{display:flex;gap:22px;color:#555;font-weight:700}
     .menu-btn{display:none}
+    .nav-panel{
+      display:none;border-top:1px solid #ebe4dc;background:#faf9f7
+    }
+    .nav-panel a{
+      display:block;padding:14px 0;font-weight:700;color:#444;border-bottom:1px solid #eee7df
+    }
+
+    .floating-actions{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      z-index:60;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .floating-btn{
+      min-width:54px;
+      height:54px;
+      border-radius:999px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:0 18px;
+      font-size:14px;
+      font-weight:900;
+      color:#fff;
+      box-shadow:0 14px 30px rgba(0,0,0,.18);
+      transition:.2s ease;
+    }
+    .floating-btn:hover{transform:translateY(-2px)}
+    .floating-phone{background:#9f1d1d}
+    .floating-line{background:#0f9d58}
+
     @media (max-width: 980px){
       .hero{min-height:auto}
       .hero-wrap,.split,.contact-wrap{grid-template-columns:1fr}
@@ -160,6 +240,7 @@
       .menu-btn{display:inline-flex}
       .nav.open .nav-panel{display:block}
     }
+
     @media (max-width: 640px){
       .section{padding:64px 0}
       .pill-grid,.stats,.process-grid{grid-template-columns:1fr}
@@ -167,19 +248,31 @@
       .service-title{font-size:24px}
       .contact-value{font-size:24px}
       .nav-wrap{height:68px}
-    }
-    .nav-panel{
-      display:none;border-top:1px solid #ebe4dc;background:#faf9f7
-    }
-    .nav-panel a{
-      display:block;padding:14px 0;font-weight:700;color:#444;border-bottom:1px solid #eee7df
+      .floating-btn{
+        height:50px;
+        font-size:13px;
+        padding:0 16px;
+      }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"源堡營造有限公司",
+    "url":"https://leo881116.github.io/yuanbao-site/",
+    "email":"yuanbaoconstruct@gmail.com",
+    "telephone":"0911-935725",
+    "description":"提供工程鑑定、驗屋、自地自建、道路工程、施工諮詢與結構安全評估服務。"
+  }
+  </script>
 </head>
 <body>
   <nav class="nav" id="nav">
     <div class="container nav-wrap">
       <a href="#top" class="brand">源堡營造</a>
+
       <div class="nav-links">
         <a href="#about">關於我們</a>
         <a href="#services">服務項目</a>
@@ -187,8 +280,10 @@
         <a href="#process">服務流程</a>
         <a href="#contact">聯絡我們</a>
       </div>
+
       <a class="btn btn-secondary menu-btn" href="javascript:void(0)" onclick="toggleMenu()">選單</a>
     </div>
+
     <div class="nav-panel container" id="navPanel">
       <a href="#about" onclick="toggleMenu(false)">關於我們</a>
       <a href="#services" onclick="toggleMenu(false)">服務項目</a>
@@ -204,9 +299,11 @@
         <div class="eyebrow">YUAN BAO CONSTRUCTION</div>
         <h1>遇到工程問題與困擾，<br>讓專業團隊成為您的後盾。</h1>
         <p>
-          以源為始，築堡為家。從道路工程、自地自建到室內設計與工程鑑定，
-          以穩健、務實、可落地的方式，提供真正能解決問題的工程服務。
+          源堡營造有限公司提供台中工程鑑定、驗屋、自地自建、道路工程、
+          施工諮詢與結構安全評估等相關服務，以穩健、務實、可落地的方式，
+          協助業主釐清問題與處理方向。
         </p>
+
         <div class="btns">
           <a class="btn btn-primary" href="#contact">立即聯繫</a>
           <a class="btn btn-secondary" href="#services">查看服務</a>
@@ -222,8 +319,9 @@
           <div class="pill">專業驗屋</div>
           <div class="pill">工程規劃</div>
           <div class="pill">工程鑑定</div>
-          <div class="pill">工程法律</div>
+          <div class="pill">結構安全評估</div>
         </div>
+
         <div class="hero-note">
           <strong>核心定位：</strong>
           不以華麗作品堆疊形象，而是以完整分工、工程經驗與專業技術能力，
@@ -259,15 +357,18 @@
       <div>
         <div class="eyebrow">ABOUT</div>
         <h2>從道路走向居室，從專業走向精緻。</h2>
+
         <p class="muted" style="font-size:18px;margin-top:22px;max-width:760px">
           源堡營造成立於 2020 年，結合營造工程、空間規劃與技術簽證能力，
           提供更完整的工程整合服務。從第一筆圖稿到最後一項施工細節，
           我們重視的不只是把工程做完，而是讓空間更穩固、使用更安心、成果更貼近需求。
         </p>
+
         <p class="muted" style="font-size:18px;margin-top:16px;max-width:760px">
           對我們而言，家的堡壘不只代表堅固，也代表對生活品質與安全的承諾。
         </p>
       </div>
+
       <div class="panel-dark">
         <div class="eyebrow" style="color:#d7b6b6">WHY US</div>
         <ul>
@@ -280,31 +381,48 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container seo-card">
+      <div class="eyebrow">COMMON ISSUES</div>
+      <h3>常見工程問題</h3>
+      <p class="muted" style="margin-top:14px;font-size:18px;max-width:980px;line-height:1.9;">
+        房屋出現裂縫？擔心結構安全？施工品質不佳？鄰損糾紛？這些問題都可以透過專業工程鑑定、
+        現況評估與施工建議，協助您釐清責任、掌握風險，並規劃後續處理方向。
+      </p>
+    </div>
+  </section>
+
   <section class="section" id="services">
     <div class="container">
       <div class="eyebrow">SERVICES</div>
       <h2>專業服務項目</h2>
+
       <div class="cards-2" style="margin-top:28px">
         <div class="service-card">
           <div class="service-no">01</div>
           <div class="service-title">各類工程鑑定（現況、損鄰與安全評估）</div>
         </div>
+
         <div class="service-card">
           <div class="service-no">02</div>
           <div class="service-title">地震前七日澆置混凝土構造物安全鑑定</div>
         </div>
+
         <div class="service-card">
           <div class="service-no">03</div>
           <div class="service-title">施工諮詢與工程規劃</div>
         </div>
+
         <div class="service-card">
           <div class="service-no">04</div>
           <div class="service-title">施工／復工計畫書撰寫</div>
         </div>
+
         <div class="service-card">
           <div class="service-no">05</div>
           <div class="service-title">逐案簽證與專業技術支援</div>
         </div>
+
         <div class="service-card">
           <div class="service-no">06</div>
           <div class="service-title">各類計算書（結構計算、擋土支撐等）</div>
@@ -316,6 +434,7 @@
   <section class="section band" id="experience">
     <div class="container">
       <div class="eyebrow" style="color:#d8afaf">SELECTED EXPERIENCE</div>
+
       <div class="split">
         <div>
           <h2>近年工程經驗</h2>
@@ -324,6 +443,7 @@
             涵蓋道路、排水、景觀、校園與公共工程等多元案型。
           </p>
         </div>
+
         <div class="projects">
           <div class="project-card">臺中二中北門地坪及排水溝改善工程</div>
           <div class="project-card">大雅區大社支線排水改善工程</div>
@@ -340,30 +460,35 @@
     <div class="container">
       <div class="eyebrow">PROCESS</div>
       <h2>服務流程</h2>
+
       <div class="process-grid" style="margin-top:28px">
         <div class="process-card">
           <div class="process-no">STEP 01</div>
-          <h3 style="font-size:28px;margin-top:10px">初步諮詢</h3>
+          <h3 style="margin-top:10px">初步諮詢</h3>
           <p>了解需求、場域條件與目前面臨的工程問題。</p>
         </div>
+
         <div class="process-card">
           <div class="process-no">STEP 02</div>
-          <h3 style="font-size:28px;margin-top:10px">專業評估</h3>
+          <h3 style="margin-top:10px">專業評估</h3>
           <p>由團隊進行現況判讀、可行性分析與執行建議。</p>
         </div>
+
         <div class="process-card">
           <div class="process-no">STEP 03</div>
-          <h3 style="font-size:28px;margin-top:10px">規劃提案</h3>
+          <h3 style="margin-top:10px">規劃提案</h3>
           <p>提出設計、施工、鑑定或計畫書等具體方案。</p>
         </div>
+
         <div class="process-card">
           <div class="process-no">STEP 04</div>
-          <h3 style="font-size:28px;margin-top:10px">執行落地</h3>
+          <h3 style="margin-top:10px">執行落地</h3>
           <p>依核定方向展開工程執行、品管與跨工班協調。</p>
         </div>
+
         <div class="process-card">
           <div class="process-no">STEP 05</div>
-          <h3 style="font-size:28px;margin-top:10px">驗收交付</h3>
+          <h3 style="margin-top:10px">驗收交付</h3>
           <p>完成驗收、文件整理與後續交付，讓業主更安心。</p>
         </div>
       </div>
@@ -380,6 +505,7 @@
           讓工程不只是單點處理，而是具備制度與流程的完整執行。
         </p>
       </div>
+
       <div class="team-card">
         <div class="team-grid">
           <div class="team-chip">公司負責人</div>
@@ -398,23 +524,43 @@
       <div>
         <div class="eyebrow" style="color:#f4dede">CONTACT</div>
         <h2>需要工程協助，歡迎直接聯繫我們。</h2>
+
         <p style="font-size:18px;max-width:720px;margin-top:22px;color:rgba(255,255,255,.84)">
           無論是工程問題、施工評估、鑑定需求、自地自建或空間規劃，
           都可以先與我們聯繫，讓專業團隊協助您釐清方向。
         </p>
+
+        <div class="cta-note">
+          ※ 本網站服務內容持續調整中，實際承接項目將依案件條件評估，歡迎來電或LINE洽詢。
+        </div>
+
+        <div class="mini-cta">
+          👉 有工程問題？建議直接來電，我們可先協助您初步判斷方向。
+        </div>
       </div>
+
       <div class="contact-card">
         <div class="contact-item">
           <div class="contact-label">PHONE</div>
-          <div class="contact-value">0911-935725</div>
+          <div class="contact-value">
+            <a href="tel:0911935725">0911-935725</a>
+          </div>
         </div>
+
         <div class="contact-item">
           <div class="contact-label">LINE</div>
-          <div class="contact-value" style="font-size:34px">0911935725 張技師</div>
+          <div class="contact-value" style="font-size:34px">
+            <a href="https://line.me/ti/p/ALCY-ZWUKw" target="_blank" rel="noopener noreferrer">
+              0911935725 張技師
+            </a>
+          </div>
         </div>
+
         <div class="contact-item" style="margin-bottom:0">
           <div class="contact-label">EMAIL</div>
-          <div class="contact-value" style="font-size:30px">yuanbaoconstruct@gmail.com</div>
+          <div class="contact-value" style="font-size:30px">
+            <a href="mailto:yuanbaoconstruct@gmail.com">yuanbaoconstruct@gmail.com</a>
+          </div>
         </div>
       </div>
     </div>
@@ -424,18 +570,31 @@
     <div class="container">© 源堡營造有限公司｜以源為始，築堡為家</div>
   </footer>
 
+  <div class="floating-actions">
+    <a class="floating-btn floating-phone" href="tel:0911935725">撥打電話</a>
+    <a class="floating-btn floating-line" href="https://line.me/ti/p/0911935725" target="_blank" rel="noopener noreferrer">LINE洽詢</a>
+  </div>
+
   <script>
     const nav = document.getElementById('nav');
     const navPanel = document.getElementById('navPanel');
+
     function updateNav(){
-      if(window.scrollY > 20){ nav.classList.add('scrolled'); }
-      else{ nav.classList.remove('scrolled'); }
+      if(window.scrollY > 20){ 
+        nav.classList.add('scrolled'); 
+      } else { 
+        nav.classList.remove('scrolled'); 
+      }
     }
+
     function toggleMenu(force){
-      const shouldOpen = typeof force === 'boolean' ? force : !document.querySelector('.nav').classList.contains('open');
+      const shouldOpen = typeof force === 'boolean'
+        ? force
+        : !document.querySelector('.nav').classList.contains('open');
       document.querySelector('.nav').classList.toggle('open', shouldOpen);
       navPanel.style.display = shouldOpen ? 'block' : 'none';
     }
+
     updateNav();
     window.addEventListener('scroll', updateNav);
   </script>
